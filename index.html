@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>笔记</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			html,
+			body {
+				height: 100%;
+				width: 100%;
+			}
+
+			iframe {
+				position: absolute;
+				top: 0;
+				border: none;
+			}
+
+			#leftSelect {
+				position: absolute;
+				width: 100%;
+				height: 5%;
+				bottom: 0;
+			}
+
+			.choices {
+				font-size: 40px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+
+		<table id="leftSelect">
+			<tr>
+				<td class="choices" id="physics">物理</td>
+				<td class="choices" id="math">数学</td>
+				<td class="choices" id="chemistry">化学</td>
+			</tr>
+		</table>
+		<iframe src="math.html" width="100%" height="95%" id="frame"></iframe>
+		<script type="text/javascript">
+			choiceMath = document.getElementById("math");
+			choicePhysics = document.getElementById("physics");
+			choiceChemistry = document.getElementById("chemistry");
+			show = document.getElementById("frame")
+			choiceMath.onclick = function() {
+				show.src = "math.html"
+			}
+			choicePhysics.onclick = function() {
+				show.src = "physics.html"
+			}
+			choiceChemistry.onclick = function() {
+				show.src = "chemistry.html"
+			}
+		</script>
+	</body>
+</html>

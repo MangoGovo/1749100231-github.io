@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>物理</title>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full">
+		</script>
+		<style type="text/css">
+			* {
+				white-space: nowrap;
+				-ms-user-select: none;
+				-moz-user-select: none;
+				-webkit-user-select: none;
+				margin-top: 10px;
+			}
+
+			body {
+				height: 100%;
+				background-color: #e8ffdf;
+				/* text-align: center; */
+			}
+
+			#container {
+				margin: 0;
+				position: relative;
+				font-size: 20px;
+			}
+
+			table,
+			th,
+			td {
+				border: 1px solid black;
+			}
+
+			table {
+				border-collapse: collapse;
+
+			}
+		</style>
+
+	</head>
+	<body>
+		<div id="container">
+			<h1>匀变速直线运动</h1>
+				<div style="display:block;text-indent:2em;">`v=at`</div>
+				<div style="display:block;text-indent:2em;">`x=frac{1}{2}at^2`</div>
+			<h1>初速度不为0的匀变直线</h1>
+				<div style="display:block;text-indent:2em;">`x=V_0+at`</div>
+				<div style="display:block;text-indent:2em;">`V_t^2-V_0^2 = 2ax`</div>
+			<h1>劲度系数</h1>
+				<div style="display:block;text-indent:2em;">`F=kx`（其中`k`称为弹簧的劲度系数）</div>
+			<h1>滑动摩擦力</h1>
+				<div style="display:block;text-indent:2em;">`F_f=\mu F_N`</div>
+			<h1>牛顿第二定律</h1>
+				<div style="display:block;text-indent:2em;">`F=ma`</div>
+			<h1>牛顿第三定律</h1>
+				<div style="display:block;text-indent:2em;">`F=-F'`</div>
+			<h1>国际单位制基本单位</h1>
+				<div style="position: relative; display:block;left: 2em;">
+					<table>
+					<tr>
+						<td>物理量名称</td>
+						<td>物理量符号</td>
+						<td>单位名称</td>
+						<td>单位符号</td>
+					</tr>
+					<tr>
+						<td>长度</td>
+						<td>`l`</td>
+						<td>米</td>
+						<td>`m`</td>
+					</tr>
+					<tr>
+						<td>质量</td>
+						<td>`m`</td>
+						<td>千克</td>
+						<td>`kg`</td>
+					</tr>
+					<tr>
+						<td>时间</td>
+						<td>`t`</td>
+						<td>秒</td>
+						<td>`s`</td>
+					</tr>
+					<tr>
+						<td>电流</td>
+						<td>`I`</td>
+						<td>安[培]</td>
+						<td>`A`</td>
+					</tr>
+					<tr>
+						<td>热力学温度</td>
+						<td>`T`</td>
+						<td>开[尔文]</td>
+						<td>`K`</td>
+					</tr>
+					<tr>
+						<td>物质的量</td>
+						<td>`n`</td>
+						<td>摩[尔]</td>
+						<td>`mol`</td>
+					</tr>
+					<tr>
+						<td>发光强度</td>
+						<td>`I`</td>
+						<td>坎[德拉]</td>
+						<td>`cd`</td>
+					</tr>
+
+					</table></div>
+
+			<h1>平抛运动在`x`轴和`y`轴的分位移：</h1>
+				<div style="display:block;text-indent:2em;">`x=V_0 t`</div>
+				<div style="display:block;text-indent:2em;">`y=frac{1}{2}g t^2`</div>
+			<h1>匀速圆周运动</h1>
+				<div style="display:block;text-indent:2em;">角速度：`\omega = frac{\Delta \varphi}{\Delta t}`</div>
+				<div style="display:block;text-indent:2em;">线速度：`v = \omega r`</div>
+				<div style="display:block;text-indent:2em;">周期：`T = frac{2\pi}{\omega}\or T = frac{2\pi r}{v}`</div>
+				<div style="display:block;text-indent:2em;">向心力：`F = m\omega ^2 r or F=m frac{v^2}{r}`</div>
+				<div style="display:block;text-indent:2em;">向心加速度：`a= \omega ^2 r or a=frac{v^2}{r}`</div>
+			<h1>匀速圆周运动</h1>
+				<div style="display:block;text-indent:2em;">开普勒第一定律：把太阳的位置精确标定在椭圆的一个焦点上</div>
+				<div style="display:block;text-indent:2em;">开普勒第二定律：面积定律，即行星与太阳的连线在相等时间内扫过的面积相等</div>
+				<div style="display:block;text-indent:2em;">开普勒第三定律：行星绕太阳运行的椭圆轨道半长轴`a`的三次方与周期`T`的二次方之比是个常量,即：</div>
+				<div style="display:block;text-indent:4em;">`frac{r^3}{T^2}=k`</div>
+			
+			<h1>万有引力</h1>
+				<div style="display:block;text-indent:2em;">万有引力定律：`F=G frac{m_1 m_2}{r^2}`（其中，`m_1`、`m_2`表示两物体的质量，`r`表示两物体的距离，质量的单位是`kg`，距离的单位为`m`，力的单位为`N`，`G=6.67 \times 10^-11`）</div>
+				<div style="display:block;text-indent:2em;">黄金代换：</div>
+				<div style="display:block;text-indent:4em;">`g=G frac{m}{r^2}`</div>
+				<div style="display:block;text-indent:4em;">WARNING：考试使用黄金代换时需要先写出：`Mg=G frac{mM}{r^2}`将M约掉再推出黄金代换</div>
+				<div style="display:block;text-indent:2em;">宇宙第一速度：</div>
+				<div style="display:block;text-indent:4em;">定义：物体在地球附近绕地球做匀速圆周运动的速度</div>
+				<div style="display:block;text-indent:4em;">万有引力提供匀速圆周运动的向心力，有：</div>
+				<div style="display:block;text-indent:6em;">`G frac{mm_地}{r^2}=m frac{v^2}{r}`</div>
+				<div style="display:block;text-indent:4em;">由此可得：</div>
+				<div style="display:block;text-indent:6em;">`v=\sqrt{frac{Gm_地}{r}}`</div>
+				<h2>宇宙三速度</h2>
+				<div style="display:block;text-indent:4em;">第一宇宙速度：7.9km/s 最小发射速度，最大运动速度</div>
+				<div style="display:block;text-indent:4em;">第一宇宙速度：7.9km/s 最小发射速度，最大运动速度</div>
+			<h1>机械能守恒定律</h1>
+				<h2>功</h2>
+					<div style="display:block;text-indent:2em;">恒力的功的大小：`W=Fs\cos \theta`</div>
+				<h2>功率</h2>
+					<div style="display:block;text-indent:2em;">平均功率：`bar P = fracWt or barP = F barv`</div>
+					<div style="display:block;text-indent:2em;">瞬时功率：`P = Fv`</div>
+				<h2>动能</h2>
+					<div style="display:block;text-indent:2em;">动能计算：`E_k=frac{1}{2}mv^2`</div>
+					<div style="display:block;text-indent:2em;">动能定理：物体受到的合力所做的功等于物体动能的变化量，可表示为：</div>
+					<div style="display:block;text-indent:2em;">`W_合=\Delta E_k=E_{kt} - E_{k0}`</div>
+				<h2>势能</h2>
+					<h3>重力势能</h3>
+						<div style="display:block;text-indent:2em;">重力势能：由于物体高度的改变而变化的能量叫做重力势能</div>
+						<div style="display:block;text-indent:2em;">重力势能的计算：`E_p=mgh`</div>
+						<div style="display:block;text-indent:2em;">重力势能与重力做功的关系：</div>
+						<div style="display:block;text-indent:2em;">物体下降，重力做正功，重力势能减小</div>
+						<div style="display:block;text-indent:2em;">物体上升，重力做负功或物体克服重力做功，重力势能增大</div>
+						<div style="display:block;text-indent:2em;">即：`W_G = - \Delta E_p`</div>
+				<h2>机械能守恒</h2>
+					<div style="display:block;text-indent:2em;">定义：在只有重力和弹力做功的系统内，动能与势能相互转化，机械能总量不变</div>
+					<div style="display:block;text-indent:2em;">即：`E=E_k+E_p`</div>
+		</div>
+	</body>
+</html>

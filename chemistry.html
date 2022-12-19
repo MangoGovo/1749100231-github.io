@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				font-family: "仿宋";
+				padding: 0;
+				color: rgb(171, 178, 191);
+				margin: 0;
+				font-weight: bold;
+			}
+			html,body{
+				/* display: flex; */
+				height: 100%;
+				width: 100%;
+				background-color: rgb(40, 44, 53);
+			}
+
+			.in1 {
+				display: block;
+				text-indent: 2em;
+			}
+
+			.in2 {
+				display: block;
+				text-indent: 4em;
+			}
+			.in3{
+				display: block;
+				text-indent: 6em;
+			}
+			
+			p {
+				
+				font-size: 1.25rem;
+			}
+			body *{
+				margin-top:20px ;
+			}
+			.HighLight {
+				color: rgb(224, 108, 117);
+				/* font-weight: bold; */
+			}
+			.HighLight * {
+				color: rgb(224, 108, 117);
+				/* font-weight: bold; */
+			}
+
+			.Underline {
+				text-decoration: underline;
+			}
+
+			img {
+				width: 600px;
+				position: relative;
+				left: 4em;
+			}
+			h1{
+				/* margin: 0; */
+				color: rgb(209, 154, 102);
+			}
+			h2{
+				color: rgb(209, 154, 102);	
+			}
+			th,
+			td {
+				border: 1px solid;
+			}
+			table {
+				font-size: 20px;
+				border-collapse: collapse;
+				position: relative;
+				display:block;
+				left: 2em;
+			}
+			table *{
+				text-align: center;
+				
+			}
+			td{
+				padding: 5px;
+			}
+		</style>
+		<!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script> -->
+		
+		<script type="text/javascript">
+			function qucikSub(TagName){
+				var pGroup = document.getElementsByTagName(TagName);
+				for (var i = 0; i < pGroup.length; i++) {
+					pGroup[i].innerHTML = pGroup[i].innerHTML.replaceAll("[","<sub>");
+					pGroup[i].innerHTML = pGroup[i].innerHTML.replaceAll("]","</sub>");
+					pGroup[i].innerHTML = pGroup[i].innerHTML.replaceAll("{","<sup>");
+					pGroup[i].innerHTML = pGroup[i].innerHTML.replaceAll("}","</sup>");
+				}
+			}
+			window.onload = function(){
+				qucikSub("p")
+				qucikSub("span")
+				qucikSub("td")
+			}
+		</script>
+	</head>
+	<body>
+		<h1 style="margin: 0;">电解质基本概念</h1>
+		<h2 class="in1">电解质与非电解质的定义：</h2>
+		<p class="in2">1.电解质：在水溶液里或熔融状态下能够导电的化合物</p>
+		<p class="in2">2.非电解质：在水溶液里或熔融状态下不能够导电的化合物</p>
+		<p class="in2">3.电解质与非电解质的共同之处，在于他们都是<span class="HighLight">化合物</span></p>
+		<p class="in2">4.电解质一定时本身含有离子或能电离出离子的化合物。有些化合物的水溶液可以导电，<span class="HighLight">但溶液中的离子不是该化合物电离所产生的，所以不属于电解质而是非电解质</span>例如SO<sub>2</sub>、SO<sub>3</sub>、CO<sub>2</sub>、NH<sub>3</sub>等，但是他们与水反应生成的H<sub>2</sub>CO<sub>3</sub>、H<sub>2</sub>SO<sub>4</sub>、H<sub>2</sub>CO<sub>3</sub>、NH<sub>3</sub>·H<sub>2</sub>O等能发生电离，是电解质</p>
+		<p class="in2">
+			5.BaSO<sub>4</sub>等难于溶于水的盐，其水溶液几乎不导电，是因为溶解的量很少，离子浓度很小。但BaSO<sub>4</sub>在融融状态下能电离，故BaSO<sub>4</sub>等难溶盐是<span
+				class="HighLight">电解质</span></p>
+
+		<h2 class="in1">强电解质与弱电解质：</h2>
+		<p class="in2"><span class="HighLight">强电解质</span>：在水溶液(或熔融状态下)能<span class="HighLight">完全电离</span>的电解质。</p>
+		<p class="in2">(1)强酸：<span class="HighLight">HClO<sub>4</sub>、HI、HBr、HCl、HNO<sub>3</sub>、H<sub>2</sub>SO<sub>4</sub></span></p>
+		<p class="in2">(2)强碱：<span class="HighLight">NAOH、KOH、Ca(OH)<sub>2</sub>、Ba(OH)<sub>2</sub></span></p>
+		<p class="in2">(3)大多数盐：<span class="HighLight">......BaSO<sub>4</sub><sup>*</sup></span></p>
+		<p class="in2">(4)活泼金属氧化物</p>
+		<p class="in2"><span class="HighLight">弱电解质</span>：融入水后只能<span class="HighLight">部分电离</span>的电解质。</p>
+		<p class="in2">种类：弱酸、弱碱、水</p>
+		
+		<h2 class="in1">强电解质与弱电解质的重要概念：</h2>
+		<p class="in2">(1)划分强、弱电解质的唯一标准是看电解质<span class="HighLight">是否完全电离</span></p>
+		<p class="in2">(2)电解质的强弱语气溶解性<span class="HighLight">无关</span></p>
+		<p class="in2">(3)电解质的强弱与溶液的导电性<span class="HighLight">没有</span>必要联系，强电解质溶液的导电性不一定强。导电性的强弱取决于溶液中自由移动的<span class="HighLight">离子浓度/电荷量</span></p>
+		<!-- 
+			[2022年4月19日19:58:10]Na
+				-->
+		<br>
+		<br>
+		<br>
+		<h1>钠及其化合物</h1>
+		<h2 class="in1">钠单质的物理性质</h2>
+		<p class="in2"><span class="HighLight">{*}金属单质只能做还原剂，被氧化</span></p>
+		<p class="in2">1.颜色：银白色，有金属光泽</p>
+		<p class="in2">2.密度：ρ[H[2]O] &gt; ρ[Na] &gt; ρ[煤油]</p>
+		<p class="in2">3.熔点：低于100℃</p>
+		<p class="in2">4.硬度：质地柔软，轻压变形，可用小刀切割</p>
+		
+		<h2 class="in1">钠单质的化学性质</h2>
+		<p class="in2">从钠原子的原子结构认识钠的化学性质——还原性</p>
+		<p class="in3">Na(2/8/1)容易失电子变成Na<sup>+</sup></p>
+		<h2 class="in1">钠单质与氧气的反应<span class="HighLight"><sup>*</sup>(必背)</span></h2>
+		<p class="in2">4Na + O[2] === 2Na[2]O <span class="HighLight">(失去全部金属光泽)</span></p>
+		<p class="in2">2Na + O[2] === Na[2]O[2] <span class="HighLight">(淡黄色)</span></p>
+		<p class="in2">Na——&gt;Na[2]O——&gt;Na[2]O[2] <span class="HighLight">(钠的连续氧化)</span></p>
+		<p class="in2">Na在空气中久置</p>
+		<p class="in3"><span class="HighLight">Na</span>—(O[2])—&gt;<span class="HighLight">Na[2]O</span>—(H[2]O)—&gt;<span class="HighLight">NaOH</span>—(CO[2])—&gt;<span class="HighLight">Na[2]CO[3]·10H[2]O</span>—(风化)—&gt;<span class="HighLight">Na[2]CO[3]</span></p>
+		
+		<h2 class="in1">钠单质与水的反应<span class="HighLight"><sup>*</sup>(必背)</span></h2>
+		<p class="in2">化学方程式：2Na + 2H[2]O === 2NaOH + H[2]↑</p>
+		<p class="in2">离子方程式：2Na + 2H[2]O === 2Na{+} + OH{+} + H[2]↑</p>
+		<p class="in2">Na加入滴加了酚酞的水<span class="HighLight">(浮、游、熔、响、红)</span></p>
+		
+		<h2 class="in1">钠与盐溶液的反应<span class="HighLight"><sup>*</sup>(必背)</span></h2>
+		<p class="in2">不饱和溶液：先与水反应，再复分解反应</p>
+		<p class="in2">饱和溶液：eg:NaOH饱和溶液，析出白色固体</p>
+		<p class="in2"></p>
+
+		<h2 class="in1">氧化钠与过氧化钠比较</h2>
+		<table id = "na2oandna2o2">
+			<tr>
+				<td></td><td>氧化钠(Na[2]O)</td><td>过氧化钠(Na[2]O[2])</td>
+			</tr>
+			<tr>
+				<td>阴、阳离子个数比</td><td>Na{+}:O{2-} = 2:1</td><td>Na{+}:O[2]{2-}<span class="HighLight">(过氧根离子)</span> = 2:1</td>
+			</tr>
+			<tr>
+				<td>化合物类型</td><td>离子化合物<br>(碱性化合物)</td><td>离子化合物<br>(非碱性氧化物，为过氧化物)</td>
+			</tr>
+			<tr>
+				<td>颜色、状态</td><td>白色固体)</td><td>淡黄色固体</td>
+			</tr>
+			<tr>
+				<td>性质主要特征</td><td>具有碱性氧化物通性</td><td>具有强氧化性</td>
+			</tr>
+			<tr>
+				<td>与水</td><td>Na[2]O + H[2]O === 2NaOH</td><td><span class="HighLight">{*}2Na[2]O[2] + H[2]O === 4NaOH + O[2]↑<br>(2Na[2]O[2]既是还原剂也是氧化剂)</span></td>
+			</tr>
+			<tr>
+				<td>与CO[2]</td><td>Na[2]O + CO[2] === Na[2]CO[3]</td><td><span class="HighLight">{*}2Na[2]O[2] + 2CO[2] === 2Na[2]CO[3] + O[2]<br>(2Na[2]O[2]既是还原剂也是氧化剂)</span></td>
+			</tr>
+			<tr>
+				<td>与盐酸</td><td>Na[2]O + 2HCl === 2NaCl + H[2]O</td><td>2NaOH + 2H[2]O === 4NaCl + 2H[2]O + <span class="HighLight">O[2]↑</span></td>
+			</tr>
+			<tr>
+				<td>与SO[2]</td><td>Na[2]O + SO[2] === Na[2]SO[3]</td><td>Na[2]O[2] + SO[2] === Na[2]SO[4]</td>
+			</tr>
+			<tr>
+				<td>与品红/石蕊</td><td>遇品红不变色，遇到石蕊变蓝色</td><td>品红因被氧化而褪色；<br>遇石蕊先变蓝，后褪色</td>
+			</tr>
+		</table>
+	</body>
+</html>
